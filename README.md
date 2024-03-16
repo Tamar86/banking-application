@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Banking Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple banking application built using React. It allows users to deposit,
+withdraw money, add interest, and apply charges to their account balance.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Deposit Money: Users can deposit money into their account.
+- Withdraw Money: Users can withdraw money from their account, provided they have sufficient funds
+- Add Interest: Users can add interest to their account balance, increasing it by 5%
+- Charges: Users can apply charges to their account balance, deducting 15% from it.
+  -Input Component: Provides a user interface for entering the amount for deposit or withdrawal.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React: Javascript library for building users interfaces.
+- React-bootstrap: Bootstrap components built with React, used for styling UI.
+- Context API: Used the useContext hook for state management and sharing data between components.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+git clone
 
-### `npm run build`
+2. Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+cd banking-application
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm install
 
-### `npm run eject`
+4. Run the application:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Open your browser and navigate to [http://localhost:3000] to view the application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Screenshots
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Main Dashboard
 
-## Learn More
+![Balance is 0](<Screenshot 2024-03-16 142623.png>)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![User enters amount](<Screenshot 2024-03-16 142701-2.png>)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Money is added in balance](<Screenshot 2024-03-16 142714.png>)
+![Amount entered to withdraw money ](<Screenshot 2024-03-16 142727.png>)
 
-### Code Splitting
+![Balance is deducted](<Screenshot 2024-03-16 142759.png>)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Interest added to balance](<Screenshot 2024-03-16 142806.png>)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Charges applied](<Screenshot 2024-03-16 142819.png>)

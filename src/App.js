@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-
+//import necessary modules and components
+import "./App.css";
+import AddInterest from "./components/AddInterest";
+import DepositMoney from "./components/DepositMoney";
+import Charges from "./components/Charges";
+import InputComponent from "./components/InputComponent";
+import MyContext from "./components/MyContext";
+import WithdrawMoney from "./components/WithdrawMoney";
+import { useState } from "react";
+//Define the App component
 function App() {
+  //Initialize state variables using useState
+  const [inputValue, setInputValue] = useState("");
+  const [balance, setBalance] = useState(0);
+  //Create values objects to be passed as value to MyContext.Provider
+  const values = {
+    inputValue,
+    balance,
+    setBalance,
+    setInputValue,
+  };
+  //Render the App component
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ marginLeft: "40%", marginTop: "10%" }}>
+      <MyContext.Provider value={values}>
+        <InputComponent />
+        <DepositMoney />
+        <WithdrawMoney />
+        <AddInterest />
+        <Charges />
+      </MyContext.Provider>
     </div>
   );
 }
